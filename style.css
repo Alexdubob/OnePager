@@ -20,13 +20,10 @@ body {
     max-width: 90vw;
 }
 
-.container {
-
-}
-
 .section {
     flex: 1;
     text-align: center;
+    font-size: clamp(2rem, 2vw, 3rem);
 
 }
 
@@ -34,16 +31,19 @@ body {
     display: flex;
     flex-direction: column;
     font-size: xx-large;
+    position: sticky;
+    top:0;
 }
 
 .navigation {
-    position: sticky;
-    top: 0;
     background-color: var(--main-font-color);
     color: var(--main-bg-color);
     margin: 1em 0;
     padding: 0.5em 0;
     border-radius: 10px;
+    text-align: center;
+    float: right;
+
 }
 
 .navigation a {
@@ -52,6 +52,7 @@ body {
     text-decoration: none;
     color: inherit;
     padding: 5px;
+    text-align: center;
 
 }
 
@@ -62,44 +63,50 @@ body {
 
 .form {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    border-radius: 5px;
-    margin:10rem 0;
+
+
+
 }
-input[type="checkbox"]{
+
+input[type="checkbox"] {
     padding: 6px;
     width: 2em;
     height: 2em;
     accent-color: var(--main-font-color);
 }
-label{
-    font-size: clamp(1rem,3vw,2rem);
+
+label {
+    font-size: clamp(1rem, 3vw, 2rem);
     font-weight: bold;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
-input[type="submit"]{
+
+input[type="submit"] {
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
-    width: 50%;
+    border: 3px solid var(--main-font-color);
+    width: 25%;
     margin: 1em auto;
-    padding: 1em;
+    padding: 0.5em;
     border-radius: 5px;
-    font-size: clamp(1rem, 3vw,1.5rem);
+    font-size: clamp(1rem, 3vw, 1.5rem);
     font-weight: bold;
 }
-input[type="text"], input[type="email"] {
+
+input[type="text"], input[type="email"], textarea[name="Frage"] {
     background-color: var(--main-bg-color);
     border: 3px solid var(--main-font-color);
     border-radius: 5px;
-    margin-bottom: 1em;
+    margin-bottom: 6em;
     color: var(--main-font-color);
-    font-size: 2em;
-    width: 60vw;
+    font-size: 1em;
+    width: 30vw;
 }
 
-h1,  section h2 {
+section h2 {
     font-family: 'Pacifico', cursive;
 }
 
@@ -107,12 +114,14 @@ h1 {
     font-size: 50px;
     font-weight: bold;
     font-family: 'Pacifico', cursive;
+    text-align: center;
 }
-img{
-    display:flex;
+
+img {
+    display: flex;
     width: 80%;
     align-items: center;
-    font-size: clamp(8rem, 20vw,12rem);
+    font-size: clamp(8rem, 20vw, 12rem);
     margin: auto;
 
 }
