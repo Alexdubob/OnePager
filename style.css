@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
 :root {
     --main-bg-color: rgb(253, 230, 66);
     --main-font-color: rgb(128, 63, 30)
 }
 
-{
+* {
     scroll-behavior: smooth;
     transition: all ease-in-out 0.5s;
 }
-body{
+
+body {
     display: flex;
     flex-direction: column;
     background-color: var(--main-bg-color);
@@ -16,23 +19,72 @@ body{
     margin: 0 auto;
     max-width: 90vw;
 }
-.container{
-    display: flex;
-    flex-direction: column;
+
+.container {
+
 }
-.section{
+
+.section {
     flex: 1;
+    text-align: center;
+
 }
-.header{
+
+.header {
+    display: flex;
+    flex-direction: column;
+    font-size: xx-large;
+}
+
+.navigation {
+    position: sticky;
+    top: 0;
+    background-color: var(--main-font-color);
+    color: var(--main-bg-color);
+    margin: 1em 0;
+    padding: 0.5em 0;
+    border-radius: 10px;
+}
+
+.navigation a {
+    justify-content: space-between;
+    font-size: clamp(2rem, 4vw, 6rem);
+    text-decoration: none;
+    color: inherit;
+    padding: 5px;
+
+}
+
+.navigation a:hover {
+    border-radius: 10px 25%;
+    background-color: white;
+}
+
+.form {
     display: flex;
     flex-direction: column;
 }
-.navigation{}
-.form{
-    display: flex;
-    flex-direction: column;
+input[type="checkbox"]{
+    padding: 6px;
+    width: 2em;
+    height: 2em;
+    accent-color: var(--main-font-color);
 }
-h1,.navigation,section h2{
-    font-weight: 900;
-    font-style: italic;
+
+h1,  section h2 {
+    font-family: 'Pacifico', cursive;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: 'Pacifico', cursive;
+}
+img{
+    display:flex;
+    width: 80%;
+    align-items: center;
+    font-size: clamp(8rem, 20vw,12rem);
+    margin: auto;
+
 }
