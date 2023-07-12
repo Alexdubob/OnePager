@@ -1,0 +1,38 @@
+:root {
+    --main-bg-color: rgb(253, 230, 66);
+    --main-font-color: rgb(128, 63, 30)
+}
+
+{
+    scroll-behavior: smooth;
+    transition: all ease-in-out 0.5s;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 90vw;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.section{
+    flex: 1;
+}
+.header{
+    display: flex;
+    flex-direction: column;
+}
+.navigation{}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+h1,.navigation,section h2{
+    font-weight: 900;
+    font-style: italic;
+}
