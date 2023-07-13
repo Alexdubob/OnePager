@@ -76,12 +76,15 @@ header {
 
 form {
     display: flex;
-    flex-direction: row;
     align-items: center;
     border-radius: 5px;
-    margin:10rem 0;
+    margin:2rem 0;
+    justify-content: space-evenly;
+    flex-direction: column;
 
-
+}
+form p{
+    font-size: clamp(1rem, 4vw, 6rem);
 
 }
 
@@ -93,7 +96,7 @@ input[type="checkbox"] {
 }
 
 label {
-    font-size: clamp(1rem, 3vw, 2rem);
+    font-size: clamp(2em, 3vw, 2rem);
     font-weight: bold;
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -111,16 +114,17 @@ input[type="submit"] {
     border-radius: 5px;
     font-size: clamp(1rem, 3vw, 1.5rem);
     font-weight: bold;
+
 }
 
 input[type="text"], input[type="email"], textarea[name="Frage"] {
     background-color: var(--main-bg-color);
     border: 3px solid var(--main-font-color);
-    border-radius: 5px;
-    margin-bottom: 6em;
+    border-radius: 10px;
+    margin-bottom: 2em;
     color: var(--main-font-color);
     font-size: 1em;
-    width: 30vw;
+    width: 50vw;
 }
 
 section h2 {
