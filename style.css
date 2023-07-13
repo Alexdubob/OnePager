@@ -27,15 +27,19 @@ body {
 
 }
 
-.header {
+header {
     display: flex;
     flex-direction: column;
-    font-size: xx-large;
     position: sticky;
+    justify-content: space-evenly;
+    margin: 0.5em 0;
+    padding: 1em 0;
     top:0;
+
 }
 
 .navigation {
+    display: flex;
     background-color: var(--main-font-color);
     color: var(--main-bg-color);
     margin: 1em 0;
@@ -43,16 +47,25 @@ body {
     border-radius: 10px;
     text-align: center;
     float: right;
+    justify-content: space-evenly;
 
+}
+.navigation ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+.navigation li{
+    margin: 0 1em;
 }
 
 .navigation a {
-    justify-content: space-between;
     font-size: clamp(2rem, 4vw, 6rem);
     text-decoration: none;
     color: inherit;
     padding: 5px;
     text-align: center;
+
 
 }
 
@@ -61,10 +74,12 @@ body {
     background-color: white;
 }
 
-.form {
+form {
     display: flex;
     flex-direction: row;
     align-items: center;
+    border-radius: 5px;
+    margin:10rem 0;
 
 
 
@@ -82,7 +97,9 @@ label {
     font-weight: bold;
     margin-bottom: 2rem;
     margin-top: 2rem;
+
 }
+
 
 input[type="submit"] {
     background-color: var(--main-bg-color);
